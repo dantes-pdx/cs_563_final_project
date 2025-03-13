@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW3 Starships</title>
+    <title>Final Project</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Homework #3</a>
+        <a class="navbar-brand"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,13 +28,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="#intro-container">Welcome</a>
+              <a class="nav-link" href="#intro">Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#starship-container">Starships</a>
+              <a class="nav-link" href="#work-history">Work History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#form-container">Form</a>
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Form</a>
             </li>
           </ul>
         </div>
@@ -43,29 +46,37 @@
 
     <main class="container flex-container">
       <!-- Intro Section -->
-      <div id="intro-container" class="section">
-        <h2>Welcome</h2>
+      <div id="intro" class="section">
+        <h2>Introduction</h2>
         <div id="intro"><script src="./javascript/01-Intro.js"></script></div>
       </div>
 
-      <!-- Starship Section -->
-      <div id="starship-container" class="section">
-        <h2>Starships</h2>
+      <!-- Work History Section -->
+      <div id="work-history" class="section">
+        <h2>Work History</h2>
         <div class="btn-group">
           <button class="btn btn-primary" id="all">All</button>
           <button class="btn btn-secondary" id="filter">Filter</button>
           <button class="btn btn-success" id="reduce">Reduce</button>
         </div>
         <div id="results"></div>
-        <!-- Starships Script -->
-        <script src="./javascript/02-starships.js"></script>
+        <!-- Work-History Script -->
+        <script src="./javascript/02-Work-History.js"></script>
+      </div>
+
+      <!-- Achievements Section -->
+      <div id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div>
+          <script src="./javascript/01-Achievements.js"></script>
+        </div>
       </div>
 
       <!-- Form Section -->
-      <div id="form-container" class="section">
+      <div id="Form" class="section">
         <h2 class="text-left">Contact Form</h2>
         <form class="p-4 border rounded shadow-sm bg-light">
-          <h2 class="mb-3">Sign Up Form</h2>
+          <!-- <h2 class="mb-3">Sign Up Form</h2> -->
           <p>Fill up the items in the form below.</p>
 
           <div class="mb-3">
@@ -80,17 +91,6 @@
           </div>
 
           <div class="mb-3">
-            <label for="username" class="form-label">Username:</label>
-            <input
-              type="text"
-              id="username"
-              class="form-control"
-              placeholder="Enter your username"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
             <input
               type="email"
@@ -100,64 +100,6 @@
               required
             />
           </div>
-
-          <div class="mb-3">
-            <label for="password" class="form-label">Password:</label>
-            <input
-              type="password"
-              id="password"
-              class="form-control"
-              placeholder="Enter your password"
-              required
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="dob" class="form-label">Date of Birth:</label>
-            <input type="date" id="dob" class="form-control" required />
-          </div>
-
-          <fieldset class="mb-3">
-            <legend class="form-label">Preferred Pronouns</legend>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="pronouns"
-                id="she"
-                class="form-check-input"
-              />
-              <label for="she" class="form-check-label">She/her</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="pronouns"
-                id="he"
-                class="form-check-input"
-              />
-              <label for="he" class="form-check-label">He/him</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="pronouns"
-                id="they"
-                class="form-check-input"
-              />
-              <label for="they" class="form-check-label">They/them</label>
-            </div>
-            <div class="form-check">
-              <input
-                type="radio"
-                name="pronouns"
-                id="prefer"
-                class="form-check-input"
-              />
-              <label for="prefer" class="form-check-label"
-                >I prefer not to say</label
-              >
-            </div>
-          </fieldset>
 
           <div class="d-flex gap-2">
             <button type="submit" class="btn btn-primary">Submit</button>

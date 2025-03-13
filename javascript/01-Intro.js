@@ -13,7 +13,7 @@ const createContent = () => {
 
   // Create h1
   const heading1 = document.createElement("h1");
-  heading1.textContent = "Hello";
+  // heading1.textContent = "Hello";
   heading1.classList.add("text-center", "mb-4");
 
   // Create section
@@ -35,9 +35,10 @@ const createContent = () => {
 
   // Create paragraph
   const paragraph = document.createElement("p");
-  paragraph.textContent = `My name is Dante, and I'm a new admit to PSU taking CS 463/563: Intro
-  to Web Development as part of my first term this Winter quarter. Let's
-  get started with the first homework assignment. My general interests
+  paragraph.textContent = `My name is Dante Sanchez and I'm a new graduate 
+  student at Portland State University majoring in Computer Science. As
+  part of my firt term I'm taking a Web Development course to brush up on 
+  web development and learn new material. My general interests
   include learning new skills that are engaging and fun. Computer
   Science topics, outdoor activities, video games, and viewing headline
   news stories are among my favorite activities.`;

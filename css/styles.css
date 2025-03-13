@@ -21,7 +21,11 @@ html {
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
-  color: var(--black);
+  /* color: var(--black); */
+
+  background-image: url("../images/pexels.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -56,9 +60,12 @@ form {
 
 .section {
   width: 100%;
-  max-width: 800px; /* Limits width for readability */
+  max-width: 60 vw;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  /* backdrop-filter: blur(5px); Adds a frosted glass effect */
+  color: white; /* Adjust as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
