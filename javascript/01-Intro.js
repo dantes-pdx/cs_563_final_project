@@ -11,19 +11,9 @@ const createContent = () => {
   const container = document.createElement("div");
   container.classList.add("intro-container", "mt-5");
 
-  // Create h1
-  const heading1 = document.createElement("h1");
-  // heading1.textContent = "Hello";
-  heading1.classList.add("text-center", "mb-4");
-
   // Create section
   const section = document.createElement("section");
   section.classList.add("text-center");
-
-  // Create h2
-  const heading2 = document.createElement("h2");
-  // heading2.textContent = "About Me";
-  heading2.classList.add("mb-3");
 
   // Create image
   const image = document.createElement("img");

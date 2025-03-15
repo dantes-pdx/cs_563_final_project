@@ -65,15 +65,17 @@ const displayText = (text) => {
 
 // Add event listeners to the buttons
 document
-  .getElementById("all")
+  .getElementById("past_work")
   .addEventListener("click", () => displayShipComponents(starships));
+
 document
-  .getElementById("filter")
+  .getElementById("current_work")
   .addEventListener("click", () =>
     displayShipComponents(filterStarships(starships))
   );
+
 document
-  .getElementById("reduce")
+  .getElementById("fun")
   .addEventListener("click", () => displayText(reduceStarships(starships)));
 
 // Fetch starship data when the page loads
