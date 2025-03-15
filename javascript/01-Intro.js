@@ -22,7 +22,7 @@ const createContent = () => {
 
   // Create h2
   const heading2 = document.createElement("h2");
-  heading2.textContent = "About Me";
+  // heading2.textContent = "About Me";
   heading2.classList.add("mb-3");
 
   // Create image
@@ -37,11 +37,10 @@ const createContent = () => {
   const paragraph = document.createElement("p");
   paragraph.textContent = `My name is Dante Sanchez and I'm a new graduate 
   student at Portland State University majoring in Computer Science. As
-  part of my firt term I'm taking a Web Development course to brush up on 
+  part of my first term I'm taking a Web Development course to brush up on 
   web development and learn new material. My general interests
-  include learning new skills that are engaging and fun. Computer
-  Science topics, outdoor activities, video games, and viewing headline
-  news stories are among my favorite activities.`;
+  are varied to include Computer Science topics, engaging visual graphics, 
+  outdoor activities, video games any lively banter.`;
   paragraph.classList.add("bio", "lead", "px-3");
 
   // Append elements to section

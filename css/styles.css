@@ -33,10 +33,6 @@ h1 {
   font-size: 2rem;
 }
 
-form {
-  width: 400px;
-}
-
 .btn-group {
   margin: auto;
   width: 400px;
@@ -66,6 +62,16 @@ form {
   border-radius: 8px;
   background-color: hsla(0, 0%, 0%, 0.7);
   /* backdrop-filter: blur(5px); Adds a frosted glass effect */
-  color: white; /* Adjust as needed */
+  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 30vw;
+}
+
+.form-control {
+  background-color: hsla(0, 0%, 0%, 0.7) !important;
+  color: green !important;
+  /* backdrop-filter: blur(5px) !important; */
 }
