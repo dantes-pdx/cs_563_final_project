@@ -34,12 +34,10 @@ const createContent = () => {
   paragraph.classList.add("bio", "lead", "px-3");
 
   // Append elements to section
-  section.appendChild(heading2);
   section.appendChild(image);
   section.appendChild(paragraph);
 
   // Append everything to container
-  container.appendChild(heading1);
   container.appendChild(section);
 
   // Append container to #intro instead of document.body
