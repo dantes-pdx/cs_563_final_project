@@ -25,10 +25,9 @@ const createContent = () => {
 
   // Create paragraph
   const paragraph = document.createElement("p");
-  paragraph.textContent = `My name is Dante Sanchez and I'm a new graduate 
-  student at Portland State University majoring in Computer Science. As
-  part of my first term I'm taking a Web Development course to brush up on 
-  web development and learn new material. My general interests
+  paragraph.textContent = `Hi, Welcome to my personal website my name is Dante Sanchez and
+  as a newly admitted graduate student at Portland State University I'm taking a Web Development
+  course to brush up on coding, web design and to learn new material. My general interests
   are varied to include Computer Science topics, engaging visual graphics, 
   outdoor activities, video games any lively banter.`;
   paragraph.classList.add("bio", "lead", "px-3");
