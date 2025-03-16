@@ -75,3 +75,30 @@ form {
   color: green !important;
   /* backdrop-filter: blur(5px) !important; */
 }
+
+/* Jumbotron Styling */
+.jumbotron {
+  padding: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  /*backdrop-filter: blur(25px); /*Adds a frosted glass effect */
+  border-radius: 10px;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Lazy Loading Thumbnails */
+.lazy {
+  filter: blur(5px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.lazy.loaded {
+  filter: blur(0);
+}
