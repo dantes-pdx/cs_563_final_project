@@ -105,14 +105,14 @@ function displayCards() {
 // Function to display Lazy Loading Thumbnails
 function displayLazyThumbnails() {
   const thumbnails = [
-    "images/thumb1.jpg",
-    "images/thumb2.jpg",
-    "images/thumb3.jpg",
-    "images/thumb4.jpg",
-    "images/thumb5.jpg",
-    "images/thumb6.jpg",
-    "images/thumb7.jpg",
-    "images/thumb8.jpg",
+    "images/black_bear.jpg",
+    "images/deer.jpg",
+    "images/elk_statue.jpg",
+    "images/local_waterfall.jpg",
+    "images/rattle_snake.jpg",
+    "images/rhino.png",
+    "images/tigers.png",
+    "images/turkeys.jpg",
   ];
 
   document.getElementById("results").innerHTML = `
