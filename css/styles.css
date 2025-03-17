@@ -84,15 +84,6 @@ form {
   border-radius: 10px;
 }
 
-/* Card Hover Effect */
-.card {
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
 /* Lazy Loading Thumbnails */
 .lazy {
   filter: blur(5px);
@@ -101,4 +92,21 @@ form {
 
 .lazy.loaded {
   filter: blur(0);
+}
+
+.zoomable {
+  transition: transform 0.3s ease;
+}
+
+.zoomable:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.card-text {
+  height: 425px; /* Set a fixed height */
+  overflow: hidden;
 }
