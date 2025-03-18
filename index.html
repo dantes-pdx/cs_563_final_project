@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Skip to main content link -->
+    <a href="#maincontent" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
       <div class="container-fluid">
@@ -49,11 +54,13 @@
       </div>
     </nav>
 
-    <main class="container flex-container">
+    <main id="maincontent" class="container flex-container">
       <!-- About Section -->
       <section id="intro" class="section">
-        <h2>About</h2>
-        <div id="intro"><script src="./javascript/01-Intro.js"></script></div>
+        <h1>About</h1>
+        <div id="intro-content">
+          <script src="./javascript/01-Intro.js"></script>
+        </div>
       </section>
 
       <!-- Work History Section -->
@@ -64,77 +71,90 @@
           <button class="btn btn-secondary" id="current_work">Present</button>
           <button class="btn btn-success" id="fun">Fun Photos</button>
         </div>
-        <div id="results" class="mt-4"></div>
+        <div id="results" class="mt-4" aria-live="polite"></div>
         <script src="./javascript/02-Work-History.js"></script>
       </section>
 
       <!-- Projects Section with Carousel -->
-       <section id="achievements" class="section">
+      <section id="achievements" class="section">
         <h2>Achievements</h2>
         <div
           id="carouselExampleFade"
           class="carousel slide carousel-fade"
           data-bs-ride="carousel"
+          aria-label="Achievements carousel"
         >
-        
+          <!-- Carousel indicators, items, and controls should be included here for full accessibility -->
+        </div>
         <script src="./javascript/03-Achievements.js"></script>
       </section>
 
       <!-- Contact Form Section -->
-<section id="form" class="section">
-  <h2 class="text-left">Contact</h2>
-  <form class="p-4 rounded shadow-sm">
-    <div class="mb-3">
-      <label for="name" class="form-label">Name:</label>
-      <input
-        type="text"
-        id="name"
-        class="form-control"
-        placeholder="Enter your name"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email:</label>
-      <input
-        type="email"
-        id="email"
-        class="form-control"
-        placeholder="Enter your email"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message:</label>
-      <textarea
-        id="message"
-        class="form-control"
-        placeholder="Enter your message"
-        rows="4"
-        required
-      ></textarea>
-    </div>
-    <div class="d-flex gap-2">
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="reset" class="btn btn-secondary">Reset</button>
-    </div>
-  </form>
-  <script src="./javascript/04-form.js"></script>
-</section>
-
+      <section id="form" class="section">
+        <h2 class="text-left">Contact</h2>
+        <form
+          class="p-4 rounded shadow-sm"
+          aria-labelledby="contactFormHeading"
+        >
+          <div id="contactFormHeading" class="visually-hidden">
+            Contact Form
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea
+              id="message"
+              class="form-control"
+              placeholder="Enter your message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+        <script src="./javascript/04-form.js"></script>
+      </section>
     </main>
 
-<!-- Modal for Image Zoom -->
-<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-body p-0">
-        <img src="" id="modalImage" class="img-fluid" alt="Zoomed Photo">
+    <!-- Modal for Image Zoom -->
+    <div
+      class="modal fade"
+      id="photoModal"
+      tabindex="-1"
+      aria-labelledby="photoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <h3 id="photoModalLabel" class="visually-hidden">Zoomed Photo</h3>
+            <img src="" id="modalImage" class="img-fluid" alt="Zoomed Photo" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
