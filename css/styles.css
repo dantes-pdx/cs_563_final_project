@@ -21,8 +21,6 @@ html {
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
-  /* color: var(--black); */
-
   background-image: url("../images/mountain_landscape_pexels(free_stock_photos).jpeg");
   background-size: cover;
   background-position: center;
@@ -56,7 +54,7 @@ h1 {
 
 .section {
   width: 100%;
-  max-width: 60 vw;
+  max-width: 60vw;
   padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
@@ -76,7 +74,6 @@ form {
   /* backdrop-filter: blur(5px) !important; */
 }
 
-/* Jumbotron Styling */
 .jumbotron {
   padding: 2rem;
   background-color: hsla(0, 0%, 0%, 0.7);
