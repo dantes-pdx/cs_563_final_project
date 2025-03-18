@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    if (!name || !email) {
+    // Ensure all fields are filled out
+    if (!name || !email || !message) {
       console.error("Error: Please fill out all required fields.");
       return;
     }
@@ -16,11 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_email: "dantes@pdx.edu", // This field should be set up in your EmailJS template
+      message: message, // Added message parameter
+      to_email: "dantes@pdx.edu", // This field should match the field name in your EmailJS template
     };
 
     // Send the email using EmailJS
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams).then(
+    emailjs.send("service_ehccknx", "template_i7pmt69", templateParams).then(
       (response) => {
         console.log("Email sent successfully!", response.status, response.text);
       },
