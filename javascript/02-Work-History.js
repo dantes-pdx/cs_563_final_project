@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "images/local_waterfall.jpg",
       "images/rattle_snake.jpg",
       "images/rhino.jpg",
-      "images/tigers.png",
+      "images/tigers.PNG",
       "images/turkeys.jpg",
     ];
     setContent(`
