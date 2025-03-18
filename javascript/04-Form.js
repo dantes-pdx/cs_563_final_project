@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      message: message, // Added message parameter
+      message: message,
       to_email: "dantes@pdx.edu", // This field should match the field name in your EmailJS template
     };
 

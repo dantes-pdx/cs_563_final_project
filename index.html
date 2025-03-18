@@ -90,6 +90,7 @@
       </section>
 
       <!-- Contact Form Section -->
+      <!-- Contact Form Section -->
       <section id="form" class="section">
         <h2 class="text-left">Contact</h2>
         <form
@@ -134,6 +135,15 @@
             <button type="reset" class="btn btn-secondary">Reset</button>
           </div>
         </form>
+
+        <!-- Include EmailJS SDK and initialize it -->
+        <script
+          type="text/javascript"
+          src="https://cdn.emailjs.com/dist/email.min.js"
+        ></script>
+        <script>
+          emailjs.init("YOUR_PUBLIC_USER_ID"); // Replace with your actual public user ID
+        </script>
         <script src="./javascript/04-form.js"></script>
       </section>
     </main>
