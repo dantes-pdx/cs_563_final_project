@@ -59,7 +59,6 @@ h1 {
   border: 1px solid black;
   border-radius: 8px;
   background-color: hsla(0, 0%, 0%, 0.7);
-  /* backdrop-filter: blur(5px); Adds a frosted glass effect */
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -71,13 +70,11 @@ form {
 .form-control {
   background-color: hsla(0, 0%, 0%, 0.7) !important;
   color: green !important;
-  /* backdrop-filter: blur(5px) !important; */
 }
 
 .jumbotron {
   padding: 2rem;
   background-color: hsla(0, 0%, 0%, 0.7);
-  /*backdrop-filter: blur(25px); /*Adds a frosted glass effect */
   border-radius: 10px;
 }
 

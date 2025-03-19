@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .map(
             (src) => `
           <div class="col-md-3">
-            <img data-src="${src}" class="lazy img-fluid zoomable" width="150" height="100" alt="Thumbnail" style="cursor:pointer;">
+            <img data-src="${src}" class="lazy img-fluid zoomable" width="150" height="100" alt="wildlife-photo" style="cursor:pointer;">
           </div>`
           )
           .join("")}

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       from_name: name,
       from_email: email,
       message: message,
-      to_email: "dantes@pdx.edu", // This field should match the field name in your EmailJS template
+      to_email: "dantes@pdx.edu",
     };
 
     // Send the email using EmailJS
